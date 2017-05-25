@@ -12,28 +12,32 @@
 	</head>
 
 	<body>
-		<script> //HEADER Script
-			window.addEventListener('WebComponentsReady', function() {
-				var link = document.querySelector('link[rel="import"]');
-				var content = link.import;
+		<header>
+			<script> //HEADER Script
+				window.addEventListener('WebComponentsReady', function() {
+					var link = document.querySelector('link[rel="import"]');
+					var content = link.import;
 
-				// Grab DOM from imports.html's document.
-				var elm = content.querySelector('.header'); //This looks for the class "footer" in the import document, and grabs it.
+					// Grab DOM from imports.html's document.
+					var elm = content.querySelector('.header'); //This looks for the class "footer" in the import document, and grabs it.
 
-				document.body.appendChild(elm.cloneNode(true));
-			});
-		</script>
+					document.body.header.appendChild(elm.cloneNode(true));
+				});
+			</script>
+		</header>
 		<p>Content of the document......</p>
-		<script> //FOOTER Script
-			window.addEventListener('WebComponentsReady', function() {
-				var link = document.querySelector('link[rel="import"]');
-				var content = link.import;
+		<footer>
+			<script> //FOOTER Script
+				window.addEventListener('WebComponentsReady', function() {
+					var link = document.querySelector('link[rel="import"]');
+					var content = link.import;
 
-				// Grab DOM from imports.html's document.
-				var elm = content.querySelector('.footer'); //This looks for the class "footer" in the import document, and grabs it.
+					// Grab DOM from imports.html's document.
+					var elm = content.querySelector('.footer'); //This looks for the class "footer" in the import document, and grabs it.
 
-				document.body.appendChild(elm.cloneNode(true));
-			});
-		</script>
+					document.body.footer.appendChild(elm.cloneNode(true));
+				});
+			</script>
+		</footer>
 	</body>
 <html>
