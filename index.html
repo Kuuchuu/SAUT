@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>SAUTech Test</title>
-</head>
-<body>
-<h1>Test Site</h1>
-</body>
-</html>
+	<head>
+		<meta charset="UTF-8">
+		<title>The Survivor Game</title>
+		<!-- Resources on other origins must be CORS-enabled. -->
+		<link rel="import" href="/imports.html">
+	</head>
+
+	<body>
+		Content of the document......
+	</body>
+
+
+	<script> //FOOTER Script
+		var link = document.querySelector('link[rel="import"]');
+		var content = link.import;
+
+		// Grab DOM from warning.html's document.
+		var elm = content.querySelector('.footer'); //This looks for the class "footer" in the import document, and grabs it.
+
+		document.body.appendChild(elm.cloneNode(true));
+	</script>
+
+<html>
