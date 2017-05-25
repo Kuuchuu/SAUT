@@ -5,8 +5,7 @@
 		<title>The Survivor Game</title>
 		<!-- Load polyfills; note that "loader" will load these async -->
 		<script src="js/webcomponentsjs-1.0.0-rc.11/webcomponents-loader.js"></script>
-		<!-- Resources on other origins must be CORS-enabled. -->
-		<link rel="import" href="/imports.html">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -14,6 +13,8 @@
 	</body>
 
 
+	<!-- Resources on other origins must be CORS-enabled. -->
+	<link rel="import" href="imports.html">
 	<script> //FOOTER Script
 		window.addEventListener('WebComponentsReady', function() {
 			var link = document.querySelector('link[rel="import"]');
