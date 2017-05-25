@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>The Survivor Game</title>
+		<!-- Load polyfills; note that "loader" will load these async -->
+		<script src="js/webcomponentsjs-1.0.0-rc.11/webcomponents-loader.js"></script>
 		<!-- Resources on other origins must be CORS-enabled. -->
-		<link rel="import" href="imports.html">
+		<link rel="import" href="/imports.html">
 	</head>
 
 	<body>
@@ -13,13 +15,15 @@
 
 
 	<script> //FOOTER Script
-		var link = document.querySelector('link[rel="import"]');
-		var content = link.import;
+		window.addEventListener('WebComponentsReady', function() {
+			var link = document.querySelector('link[rel="import"]');
+			var content = link.import;
 
-		// Grab DOM from imports.html's document.
-		var elm = content.querySelector('.footer'); //This looks for the class "footer" in the import document, and grabs it.
+			// Grab DOM from imports.html's document.
+			var elm = content.querySelector('.footer'); //This looks for the class "footer" in the import document, and grabs it.
 
-		document.body.appendChild(elm.cloneNode(true));
+			document.body.appendChild(elm.cloneNode(true));
+		});
 	</script>
 
 <html>
