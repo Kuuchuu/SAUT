@@ -16,7 +16,7 @@
 		var link = document.querySelector('link[rel="import"]');
 		var content = link.import;
 
-		// Grab DOM from warning.html's document.
+		// Grab DOM from imports.html's document.
 		var elm = content.querySelector('.footer'); //This looks for the class "footer" in the import document, and grabs it.
 
 		document.body.appendChild(elm.cloneNode(true));
