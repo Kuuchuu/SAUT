@@ -12,21 +12,22 @@
 	</head>
 
 	<body>
-		<header>
+		<header id="Header">
 			<script> //HEADER Script
 				window.addEventListener('WebComponentsReady', function() {
 					var link = document.querySelector('link[rel="import"]');
 					var content = link.import;
 
 					// Grab DOM from imports.html's document.
-					var elm = content.querySelector('.header'); //This looks for the class "footer" in the import document, and grabs it.
+					var elm = content.querySelector('.header'); //This looks for the class "header" in the import document, and grabs it.
 
-					document.body.header.appendChild(elm.cloneNode(true));
+					document.getElementById("Header").appendChild(elm.cloneNode(true));
+					//document.body.header.appendChild(elm.cloneNode(true));
 				});
 			</script>
 		</header>
 		<p>Content of the document......</p>
-		<footer>
+		<footer id="Footer">
 			<script> //FOOTER Script
 				window.addEventListener('WebComponentsReady', function() {
 					var link = document.querySelector('link[rel="import"]');
@@ -35,7 +36,8 @@
 					// Grab DOM from imports.html's document.
 					var elm = content.querySelector('.footer'); //This looks for the class "footer" in the import document, and grabs it.
 
-					document.body.footer.appendChild(elm.cloneNode(true));
+					document.getElementById("Footer").appendChild(elm.cloneNode(true));
+					//document.body.footer.appendChild(elm.cloneNode(true));
 				});
 			</script>
 		</footer>
