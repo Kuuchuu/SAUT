@@ -32,6 +32,13 @@ p {
 	line-height: 1.2;
 }
 
-footer.h5 {
+footer {
+	text-align:center;
+	position:fixed;
+	bottom:0px;
+	width:100%;
+}
+
+h5.footer {
 	margin-top: .5em;
 }
