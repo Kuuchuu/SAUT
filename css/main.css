@@ -16,11 +16,11 @@ body {
 	/*border-style: ridge;
 	border-width: 1px;
 	border-color: #c9d8ef;*/
-	/*border-radius: 5px;*/
+	border-radius: 5px;
 	padding-left: 1em;
 	padding-right: 1em;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 
 h1 {
