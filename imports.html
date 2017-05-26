@@ -1,6 +1,23 @@
-<div class="header">
+<div class="header" id="header">
 	<h1>The Survivor Game</h1>
 </div>
-<div class="footer"><hr />
+<div class="footer" id="footer"><hr />
+	<script>
+		$(function(){
+			$(window).resize(function(){
+				placeFooter();
+			});
+			placeFooter();
+			// hide it before it's positioned
+			$('#footer').css('display','inline');
+		});
+
+		function placeFooter() {    
+			var windHeight = $(window).height();
+			var footerHeight = $('#footer').height();
+			var offset = parseInt(windHeight) - parseInt(footerHeight);
+			$('#footer').css('top',offset);
+		}
+	</script>
 	<h5>&copy; Website Design, Blase Zinck<br>&copy; The Survival Game, 2017</h5>
 </div>
