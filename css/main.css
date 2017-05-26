@@ -5,3 +5,12 @@ body {
 	background-image: url("https://www.transparenttextures.com/patterns/graphy-dark.png");
 	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+
+.container {
+	background-color: rgba(180, 200, 232, 0.3);
+	border: 1px ridge #c9d8ef;
+	/*border-style: ridge;
+	border-width: 1px;
+	border-color: #c9d8ef;*/
+	border-radius: 5px;
+}
